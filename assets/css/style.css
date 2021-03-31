@@ -80,9 +80,6 @@ hr {
     border-radius: 30px;
     border-color: gray;
 }
-.about-detail {
-    color: white !important;
-}
 
 #about-me {
     background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
@@ -99,7 +96,13 @@ hr {
 
 .about-detail{
     background-color: gray;
-    border-radius: 30px;    
+    border-radius: 30px;
+    color: white !important;  
+    line-height: 300% !important;  
+}
+
+.about-detail h5{ 
+    line-height: 150% !important;  
 }
 
 #about-text {
