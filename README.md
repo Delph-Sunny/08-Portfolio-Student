@@ -42,8 +42,8 @@ Scroll to the list of projects and click on the image to access to the deployed 
 
 ## Images of the Page  
 
-![index at 992](./assets/template/992-index.png) ![contact at 992](./assets/template/992-contact.png)  
-![portfolio at 992](./assets/template/992-portfolio.png)  
+![index at 992](./assets/images/992-index.png) ![contact at 992](./assets/images/992-contact.png)  
+![portfolio at 992](./assets/images/992-portfolio.png)  
 
 
 ## Credits
