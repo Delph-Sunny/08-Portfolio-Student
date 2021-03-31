@@ -67,6 +67,7 @@ h1 {
 
 hr {
     border-width: 5px;
+    
 }
 
 /************************
@@ -88,7 +89,7 @@ hr {
     background-size: cover;
     background-position: center;
     background-color: gray;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     max-width: 100%;
 }
@@ -116,6 +117,17 @@ hr {
 /************************
 *   Contact Me Section   *
 *************************/
+#contact-me {
+    background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
+    background-image: url("../images/background6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+    width: 100vw;
+    max-width: 100%;
+}
 .connect{
     color: teal;
 }
