@@ -1,86 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>My Profile | About</title>
-    <!-- Icon website -->
-    <link rel="icon" type="image/png" href="./assets/images/icon.png" sizes="16x16">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
-    crossorigin="anonymous">
-    <!--My stylesheet to customize-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>My Profile</title>
+        <!-- Icon website -->
+        <link rel="icon" type="image/png" href="./assets/images/favicon.png" sizes="16x16"/>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous"/>
+        <!-- fontawesome -->
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"/>
+        <!--My stylesheet to customize-->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    </head>
 
-</head>
-<body class="view"> <!--Background Image-->
-    <!-- Static navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <span class="navbar-text d-inline text-white">Delphine Teboul</span>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">            
-                    <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+    <body> <!--Background Image-->
+        <section class="view container-fluid" id="enter">
+            <!-- Home div with a button to scroll down -->
+            <div class="container-fluid" id="welcome">
+                <h1 id="my-name">Delphine Sunny</h1>
+                <h3 id="title">Full Stack Web Developer Student</h3> 
+                <br/>
+                <br/>          
+                <button type="button" class="btn btn-lg text-light btn-outline-light mt-5" onclick="document.location='#about-me'" id="btn-welcome">
+                        <i class="fas fa-angle-double-down fa-3x p-3" id="down-arrow-1"></i>
+                </button>            
+            </div>
+        </section>
+        
+
+        <section  class="container-fluid p-0 ">
+            <div class="row pt-2 container-fluid ml-0" id="about-me">
+                <div class="col-12 col-md-5 text-center mt-5">
+                    <img id="profile" src="./assets/images/Profile.jpg" alt="Delphine" />               
+                </div>
+                <br/>
+                <div class="col-12 col-md-5 px-0" id="about-text">
+                    <div class="container-fluid about-detail py-2">
+                        <div class="text-center">
+                            
+                            <h1>About Me</h1>
+                        </div>
+                        <br/>
+                        <h5>
+                            Hello! My name is Delphine and I am a full stack web developer student. I was born in France in a city nicknamed "The gate of the Alps". 
+                                I learned how to ski as soon as I could walk and I still have a passion for anything related to winter sports. I also love travelling and meeting other cultures.
+                        </h5>
+                        <br/>                   
+                        <h5>
+                            I landed in Software development field through my interest of foreigner languages and cultures after graduating from Northeastern University with a MS in Chemical Engineering.  
+                        </h5>
+                        <br/>
+                        <h5>
+                            Working in the Localization field for years, I recently decided to extend my knowlege in computer science with a Coding Bootcamp at UConn. 
+                            I am looking forward to apply my new skills at work.
+                        </h5>
+                        <!-- For another portfolio 
+                        <br/>
+                        <h5>
+                            On regular basis, I develop new localization workflows for specific projects based on the L10N and UX best practices. 
+                            As a Scrum Master, I ensure the compliance of the team to the scrum framework and work every day in a diverse environment with team members of other various skills and backgrounds. 
+                            As a Technical Supervisor, I am passionate about new technologies and code development, and therefore always look for new classes and trainings to build new skills and apply them in my daily work. 
+                        </h5>  -->                 
+                    </div>
+                </div>             
+            </div>
+        </section>
+        
+        <section class="row pt-4 container-fluid ml-0 project-bg">
+            <div class="col-4 text-center py-0">
+                <!-- needed to center arrow responsively -->
+            </div>        
+            <div class="col-4 text-center py-0">
+                <button type="button" class="all-btn btn btn-lg mt-5 " onclick="document.location='#portfolio'">
+                    <i class="fas fa-angle-double-down fa-3x p-3"></i>
+            </button>         
+            </div>
+            <div class="col-4 text-center py-0">
+                <!-- needed to center arrow responsively -->
+            </div>
+            <!-- Separation Line -->
+            <div class="container-fluid buffer">                            
+                <div class="row pt-5">
+                    <div class="col-12">    
+                        <div class="text-center">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center pt-0 pb-5" id="portfolio">
+                <br/>
+                <h1 class="big-text">Portfolio</h1>
+                <br/>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container-fluid projects">
+                    <div class="row"> 
+                        <!-- Extra project for fun-->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto px-2">
+                            <div class="card project-card my-2 text-center shadow-lg">
+                                <a href="https://delph-sunny.github.io/Tic-Tac-Toe_v2.0/" target="_blank"><img class="card-img-top"
+                                        src="./assets/images/TicTacToe.png" alt="Tic-tac-toe" /></a>
+                                <div class="card-body">
+                                    <h3 class="card-text">Tic-Tac-Toe</h3>
+                                    <p class="card-text">
+                                        A simple and fully responsive tic-tac-toe using Bootstrap.
+                                    </p>
+                                    <br/><br/>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <a href="https://github.com/Delph-Sunny/Tic-Tac-Toe_v2.0" target="_blank">Github repo</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project1 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto px-2">
+                            <div class="card project-card my-2 text-center shadow-lg">
+                                <a href="https://delph-sunny.github.io/Playlist-Creator/" target="_blank"><img class="card-img-top"
+                                        src="./assets/images/splash_screenshot.png" alt="My Cool Playlist" /></a>
+                                <div class="card-body">
+                                    <h3 class="card-text">My Cool Playlist</h3>
+                                    <p class="card-text">
+                                        A music app using Materialize, JQuery and several APIs. 
+                                        Users can create playlists and record song data and lyrics. 
+                                        The app also provides a link to YouTube to listen to the song and/or watch the music video.
+                                    </p>
+                                    <br/>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <a href="https://github.com/Delph-Sunny/Playlist-Creator" target="_blank">Github repo</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Homework 6 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto px-2">
+                            <div class="card project-card my-2 text-center shadow-lg">
+                                <a href="https://delph-sunny.github.io/06-My_5-day_Weather_Forecast/" target="_blank"><img class="card-img-top"
+                                        src="./assets/images/My5DayWeatherForecast.png" alt="Weather forcast" /></a>
+                                <div class="card-body">
+                                    <h3 class="card-text">My 5-day Weather Forecast</h3>
+                                    <p class="card-text">                                     
+                                        A weather forecast app using Bootstrap, JQuery and several API calls from 
+                                        <a href="http://openweather.com" target="_blank">OpenWeather</a>. Users can get the current weather and a 5-day forecast for multiple specific cities.
+                                    </p>
+                                    <br/>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <a href="https://github.com/Delph-Sunny/06-My_5-day_Weather_Forecast" target="_blank">Github repo</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Homework 5 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto px-2">
+                            <div class="card project-card mt-2 text-center shadow-lg">
+                                <a href="https://delph-sunny.github.io/05-Daily_Planner_with_JQuery/" target="_blank"><img class="card-img-top" 
+                                    src="./assets/images/WorkDayScheduler.png" alt="Work Day Scheduler" /></a>
+                                <div class="card-body">
+                                    <h3 class="card-text">
+                                        Work Day Scheduler
+                                    </h3>
+                                    <p class="card-text">
+                                        A basic daily planner app created using JQuery. 
+                                        Users can save events for each hour of the day.
+                                    </p>
+                                    <br/><br/>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <a href="https://github.com/Delph-Sunny/05-Daily_Planner_with_JQuery"
+                                            target="_blank">Github repo</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Homework 4 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto px-2">
+                            <div class="card project-card my-2 text-center shadow-lg">
+                                <a href="https://delph-sunny.github.io/04-Code_Quiz/" target="_blank"><img class="card-img-top"
+                                        src="./assets/images/Quiz.png" alt="Coding Quiz Challenge" /></a>
+                                <div class="card-body">
+                                    <h3 class="card-text">Coding Quiz Challenge</h3>
+                                    <p class="card-text">
+                                        The web page is a timed coding quiz with multiple-choice questions.
+                                    <br/><br/><br/>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <a href="https://github.com/Delph-Sunny/04-Code_Quiz" target="_blank">Github repo</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Homework 3 -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto px-2">
+                            <div class="card project-card my-2 text-center shadow-lg">
+                                <a href="https://delph-sunny.github.io/03-PasswordWithJavaScript/" target="_blank"><img class="card-img-top"
+                                        src="./assets/images/Passport.png" alt="Password Generator" /></a>
+                                <div class="card-body">
+                                    <h3 class="card-text">Password Generator</h3>
+                                    <p class="card-text">
+                                        This responsive web page generates random passwords based on several criteria.
+                                    <br/><br/>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <a href="https://github.com/Delph-Sunny/03-PasswordWithJavaScript" target="_blank">Github repo</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                                                 
+                    </div>                    
+                </div>
+            </div>
+            <div class="container-fluid buffer px-0">                                
+                <div class="row">
+                    <div class="col-12">                        
+                        <div class="text-center">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section  class="container-fluid p-0 ">
+        <div class="text-center" id="contact-me">
+                <br/>
+            <h1 class="pt-3 pb-2" id="contact-txt">Contact Me</h1>
+            <br/>
+            <br/><br/>
+            <div class="col-md-12 mx-auto" >
+                <a class="connect" href="https://github.com/Delph-Sunny" target="_blank">
+                    <i class="fab fa-github fa-3x"></i></a>
+                <span>&nbsp &nbsp</span>
+                <a class="connect" href="mailto:SunnyDelph94@gmail.com?Subject=First%20Contact">
+                    <i class="fas fa-envelope fa-3x"></i></a>
+                <span>&nbsp &nbsp</span>
+                <a class="connect" href="https://www.linkedin.com/in/delphine-teboul-b423744/" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+                    
+            <div class="container-fluid buffer">                                
+                <div class="row pt-5">
+                    <div class="col-12">                        
+                        <div class="text-center">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid buffer">            
+                <div class="row">
+                    <div class="col-4 text-center py-0">
+                        <!-- needed to center arrow responsively -->
+                    </div>        
+                    <div class="col-4 text-center py-0">
+                        <button type="button" class="all-btn btn btn-lg" onclick="document.location='#enter'">
+                            <i class="fas fa-angle-double-up fa-3x p-3"></i>
+                        </button>         
+                    </div>
+                    <div class="col-4 text-center py-0">
+                        <!-- needed to center arrow responsively -->
+                    </div>
+                </div>
+                <div class="row pt-2 mb-5">
+                    <div class="col-12">
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>           
             </div>
         </div>
-    </nav>
-    <!--End of navbar-->
+    </section>
+        <!--Fixed Footer-->
+        <footer class="footer p-3 text-center font-weight-light">
+            &copy; Copyright 2020 DT
+        </footer>
     
-    <!--Main Layout-->
-    <main class="container-fluid">
-        <article class="row pb-3 mb-5">
-            <div class="bg-white col-sm-8 mx-auto mt-5">
-                <header class="page-header mt-3">
-                    <h1>About Me</h1>
-                </header>
-                <hr>
-                <div class="row px-3">
-                    <div>
-                        <img src="./assets/images/Profile.jpg" class="img-fluid float-left mr-3" alt="Delphine's profile picture">
-                        <p>My name is Delphine. I was born in France in a city nicknamed "The gate of the Alps". 
-                            Growing up in a family of fanatic skiers, I learned how to ski as soon as I could walk. 
-                            I wasn't thrilled with the cold at first, but the beauty of the big white mountains under a blue sky quickly won me over.</p>
-                        <p>Like most kids in the area, I raced the local alpine ski races but as I got older, I started to appreciate backcountry more. 
-                            Just before my freshman year in college, I tried snowboarding. I was hooked immediately. Weeks and vacations were not enough anymore.
-                             I found my new home and moved to <a href="https://www.les2alpes.com" target="_blank" title="Les 2 Alpes's website">Les 2 Alpes</a>. </p>
-                        <p>With a big domain, one of the best backcountries in the world, a glacier to ride in summer, 
-                            a great nightlife and an active mountaineer community, this ski resort had everything I could dream of. 
-                            Unfortunately, there wasn't much of a career opportunity outside of the ski/retail field so I had to move away once I graduated. </p>
-                        <p>Now, with remote work being more popular in many companies, I may be able to move back there one day 
-                            and once again gaze at the magnificent <a href="./assets/images/muzelle.jpg" target="_blank" title="Roche de la Muzelle">Muzelle</a> out my window.</p>
-                    </div>
-                </div>                   
-            </div>
-        </article>
-    </main>
- 
-    <!--Fixed Footer-->
-    <footer class="footer p-3 text-center font-weight-light">
-        &copy; Copyright 2020 Delphine Teboul
-    </footer>
-   
-    <!-- Javascript: jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!-- Javascript: jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 
-</body>
+    </body>
 </html>
