@@ -13,7 +13,7 @@ html {
 *   Background Image   *
 ************************/
 .view {    
-    background-image: url('../images/background1.jpg');
+    background-image: url('../images/background1-min.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -83,7 +83,7 @@ hr {
 
 #about-me {
     background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
-    background-image: url("../images/background6.jpg");
+    background-image: url("../images/background6-min.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -120,76 +120,6 @@ hr {
     min-height:500px;
 }
 
-/************************
-*   Contact Me Section   *
-*************************/
-#contact-me {
-    background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
-    background-image: url("../images/sb1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center;
-    background-color: gray;
-    width: 100vw;
-    max-width: 100%;
-}
-.connect{
-    color: white;
-}
-
-/***********************
-*       Footer         *
-************************/
-.footer {
-    background-color:gray;
-    border-top: 5px solid;
-    border-color: teal;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size: 80% !important;
-}
-
-/*****************************
-*       media queries        *
-******************************/
-@media only screen and (max-width: 1020px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    h5 {
-        font-size: 11px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    .fa-3x{
-        font-size: 20px !important; 
-    }
-    #title {
-        font-size: 14px;
-    }
-
-    #profile {
-        max-height: 650px;        
-    }    
-}
-
-@media only screen and (max-width: 720px) {
-    #about-text {
-        margin-top: 0px !important;
-    }
-}
 
 .collapsible-link{
     text-decoration: none !important;
@@ -229,3 +159,77 @@ hr {
     transform: rotate(180deg);
   }
   
+
+
+/************************
+*   Contact Me Section   *
+*************************/
+#contact-me {
+    background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
+    background-image: url("../images/sb1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+    width: 100vw;
+    max-width: 100%;
+}
+.connect{
+    color: white;
+}
+
+/***********************
+*       Footer         *
+************************/
+.footer {
+    background-color:gray;
+    border-top: 5px solid;
+    border-color: teal;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 80% !important;
+}
+
+/*****************************
+*       media queries        *
+******************************/
+@media only screen and (max-width: 1020px) {
+    h1 {
+        font-size: 24px;        
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 11px;
+       
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .fa-3x {
+        font-size: 20px !important; 
+    }
+
+    #title {
+        font-size: 14px;
+    }
+
+    #profile {
+        max-height: 650px;        
+    }    
+}
+
+@media only screen and (max-width: 720px) {
+    #about-text {
+        margin-top: 0px !important;
+    }
+}
