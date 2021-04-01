@@ -113,7 +113,7 @@ hr {
 *    Portfolio Section   *
 *************************/
 .all-btn{
-    color: teal;
+    color: teal !important;
 }
  
 .project-card {    
@@ -135,7 +135,7 @@ hr {
     max-width: 100%;
 }
 .connect{
-    color: teal;
+    color: white;
 }
 
 /***********************
@@ -190,3 +190,42 @@ hr {
         margin-top: 0px !important;
     }
 }
+
+.collapsible-link{
+    text-decoration: none !important;
+}
+
+/* Horizontal line */
+.collapsible-link::after {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;    
+  }
+  
+  /* Vertical line */
+  .collapsible-link::before {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .collapsible-link[aria-expanded='true']::before {
+    transform: rotate(90deg) translateX(-1px);
+  }
+  
+  .collapsible-link[aria-expanded='true']::after {
+    transform: rotate(180deg);
+  }
+  
