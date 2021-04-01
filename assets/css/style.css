@@ -12,7 +12,7 @@ html {
 /***********************
 *   Background Image   *
 ************************/
-.view {    
+#enter {    
     background-image: url('../images/background1-min.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,6 +40,7 @@ html {
 
 #my-name{
     color: white;
+    margin-bottom: 1.5rem;
 }
  
 #btn-welcome {
@@ -61,12 +62,13 @@ button:active {
 *   Headers and Break Lines   *
 *******************************/   
 h1 {
-    color: teal;
+    color: #4395ab;
     font-weight: bolder;
 }
 
 hr {
     border-width: 5px;
+    border-color: gray;
 
 }
 
@@ -113,7 +115,7 @@ hr {
 *    Portfolio Section   *
 *************************/
 .all-btn{
-    color: teal !important;
+    color: #4395ab !important;
 }
  
 .project-card {    
@@ -134,7 +136,7 @@ hr {
     position: absolute;
     top: calc(50% - 1px);
     right: 1rem;
-    display: block;
+   
     transition: all 0.3s;    
   }
   
@@ -147,7 +149,6 @@ hr {
     position: absolute;
     top: calc(50% - 7px);
     right: calc(1rem + 6px);
-    display: block;
     transition: all 0.3s;
   }
   
@@ -159,7 +160,11 @@ hr {
     transform: rotate(180deg);
   }
   
-
+.github a{
+    color:#4395ab;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /************************
 *   Contact Me Section   *
@@ -175,8 +180,13 @@ hr {
     width: 100vw;
     max-width: 100%;
 }
-.connect{
+.contact-txt{
     color: white;
+}
+.connect{
+    -webkit-text-fill-color: #4395ab;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.5px; 
 }
 
 /***********************
@@ -185,7 +195,7 @@ hr {
 .footer {
     background-color:gray;
     border-top: 5px solid;
-    border-color: teal;
+    border-color: #4395ab;
     color: white;
     position: fixed;
     bottom: 0;
@@ -199,28 +209,28 @@ hr {
 ******************************/
 @media only screen and (max-width: 1020px) {
     h1 {
-        font-size: 24px;        
+        font-size: 1.5rem;        
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     h5 {
-        font-size: 11px;
+        font-size: 1.15rem;
        
     }
 
     p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .fa-3x {
-        font-size: 20px !important; 
+        font-size: 1.25rem !important; 
     }
 
     #title {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     #profile {
@@ -230,6 +240,6 @@ hr {
 
 @media only screen and (max-width: 720px) {
     #about-text {
-        margin-top: 0px !important;
+        margin-top: 0rem !important;
     }
 }
