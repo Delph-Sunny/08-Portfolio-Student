@@ -118,7 +118,6 @@ h1 {
 .all-btn{
     color: #4395ab !important;
 }
- 
 
 .collapsible-link{
     text-decoration: none !important;
@@ -132,8 +131,7 @@ h1 {
     background: #333;
     position: absolute;
     top: calc(50% - 1px);
-    right: 1rem;
-   
+    right: 1rem;   
     transition: all 0.3s;    
   }
   
@@ -163,9 +161,6 @@ h1 {
     font-weight: bold;
 }
 
-.portfolio-section {
-
-}
 
 /************************
 *   Contact Me Section   *
@@ -213,7 +208,7 @@ h1 {
         font-size: 1.8rem;        
     }
 
-    h3 {
+    h4 {
         font-size: 1.5rem;
     }
 
@@ -240,7 +235,7 @@ h1 {
         font-size: 1.5rem;        
     }
 
-    h3 {
+    h4 {
         font-size: 1.25rem;
     }
 
@@ -259,6 +254,11 @@ h1 {
         margin-top: 0rem !important;       
     }
     
+    h4 {
+        font-size: 0.9rem;
+        margin-top: 0rem !important;       
+    }
+
     h5 {
         font-size: 0.75rem;
         margin-top: 0rem !important;       
@@ -279,5 +279,10 @@ h1 {
     #profile {
         max-height: 150px; 
         margin-top: 0;       
-    }    
+    } 
+
+    .github a{
+        font-size: 0.75rem; 
+    }
+       
 }
