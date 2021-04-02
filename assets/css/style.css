@@ -83,7 +83,7 @@ h1 {
 }
 
 #about-me {
-    background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
+    background-image: linear-gradient(to bottom right, #121311c2, #5abef881);
     background-image: url("../images/background6-min.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -166,7 +166,7 @@ h1 {
 *   Contact Me Section   *
 *************************/
 #contact-me {
-    background-image: linear-gradient(to bottom right, #6b8f4dc2, #5abef8b0);
+    background-image: linear-gradient(to bottom right, #121311c2, #5abef881);
     background-image: url("../images/sb1.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -183,6 +183,11 @@ h1 {
     -webkit-text-fill-color: white;
   -webkit-text-stroke-color: #4395ab;
   -webkit-text-stroke-width: 0.5px; 
+}
+
+.connect i:hover {    
+    -webkit-text-fill-color: black;
+    transform: scale(1.1) perspective(1px);
 }
 
 /***********************
@@ -247,6 +252,7 @@ h1 {
         margin-top: 0rem !important;
     }
 }
+
 @media only screen and (max-width: 599px) {
 
     h1 {
